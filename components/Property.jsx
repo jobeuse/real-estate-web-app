@@ -7,8 +7,8 @@ import {GoVerify} from 'react-icons/go';
 import millify from 'millify';
 
 
-const Property = ({property:{coverPhoto,price,rentFrequancy,rooms,title,baths,area,agency,isVerfied,externalId}}) =>(
-    <Link href={`/property/${externalId}`} passHref>
+const Property = ({property:{coverPhoto,price,rentFrequancy,rooms,title,baths,area,agency,isVerfied,externalID}}) =>(
+    <Link href={`/property/${externalID}`} passHref>
        <Flex flexWrap="wrap" w="420px" p="5" padddingTop="0" justifyContent="flex-start" cursor="pointer">
             <Box>
                 <img src={coverPhoto?coverPhoto.url:""} width={400} height={260} alt="House" />

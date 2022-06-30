@@ -7,7 +7,7 @@ import {GoVerify} from 'react-icons/go';
 import millify from 'millify';
 
 
-const Property = ({property:{coverPhoto,price,rentFrequancy,rooms,title,baths,area,agency,isVerfied,externalID}}) =>(
+const Property = ({property:{coverPhoto,price,rentFrequency,rooms,title,baths,area,agency,isVerfied,externalID}}) =>(
     <Link href={`/property/${externalID}`} passHref>
        <Flex flexWrap="wrap" w="420px" p="5" padddingTop="0" justifyContent="flex-start" cursor="pointer">
             <Box>
@@ -20,8 +20,8 @@ const Property = ({property:{coverPhoto,price,rentFrequancy,rooms,title,baths,ar
                             {isVerfied && <GoVerified/>}
                         </Box>
                         <Text fontSize="lg" fontWeight="bold">
-                            AED { millify(price)} {rentFrequancy &&
-                             `/${rentFrequancy}`}
+                            AED { millify(price)} {rentFrequency &&
+                             `/${rentFrequency}`}
                         </Text>
                     </Flex>
                     <Box>

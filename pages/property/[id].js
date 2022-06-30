@@ -2,8 +2,8 @@ import Link from 'next/link';
 import {Box, Flex,Spacer,Text,Avatar} from '@chakra-ui/react';
 import Image from 'next/image';
 import {FaBed, FaBath} from 'react-icons/fa'
-import {BsGridFill} from 'react-icons/bs';
-import {GoVerified} from 'react-icons/go';
+import {BsGridFill} from 'react-icons/bs'; 
+import { GoVerified } from 'react-icons/go';
 import millify from 'millify';
 import {basUrl,fetchApi} from '../../utils/fetchApi'
 import ImageScrollbar from '../../components/ImageScrollbar';
@@ -18,7 +18,7 @@ const PropertyDetails = ({propertyDetails: {price,rentFrequency,rooms,title,bath
                 <Flex padddingTop="2" alignItems="center" justifyContent="space-between">
                     <Flex alignItems="center">
                         <Box paddingRight="3" color="green.400">
-                            {isVerfied && <GoVerified/>}
+                            {isVerfied && <GoVerified />}
                         </Box>
                         <Text fontSize="lg" fontWeight="bold">
                             AED { millify(price)} {rentFrequency &&

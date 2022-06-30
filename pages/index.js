@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link';
+import Link from 'next/link'; 
+import { GoVerified } from 'react-icons/go';
 import {Flex,Box,Text,Button } from '@chakra-ui/react'
 
 import {basUrl,fetchApi} from '../utils/fetchApi'
